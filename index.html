@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> DEPARTMENT OF COMPTER SCIENCE  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/comScience_logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">STUDY WITH US</a></li>
+            <li><a href="">COURSE FINDER</a></li>
+            <li><a href="">SCHOOLS</a></li>
+            <li><a href="">RESEARCH</a></li>
+            <li><a href="">ALUMNI AND FRIENDS</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">EVENTS</a></li>
+            <li><a href="">ABOUT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1> GATEWAY TO WORLD CLASS COMPUTER SCIENCE EDUCATION</h1>
+      </div>
+    </section>
+    <!-----course---->
+ <section class="courses">
+    <div class="row">
+        <div class=" course-col">
+         <h3 class="hero-btn">Short Courses</h3>
+         <p>Our eight week intensive cetificate course is open to seniorhigh school graduates,tertiary students, school graduates, workers and the general public.</p>
+        </div>
+        <div class=" course-col">
+            <h3 class="hero-btn">Undergraduate Programs.</h3>
+           <p> open the door to sought-after technology careers with a world-class Bachelor of Science in Computer Science degree.</p>      
+        </div>
+        <div class=" course-col">
+          <h3 class="hero-btn">MPhill and Msc programmes</h3>
+          <p>Embrace world class graduate education with unique blend of cutting-edge research and industry experience.</p>
+        </div>
+        <div class=" course-col">
+          <h3 class="hero-btn">PhD programmes</h3>
+          <p>Our PHDs lead the effort to extend the boundaries og knowledge through quality and industry relevent.</p>
+        </div>   
+    </div>
+  </section>
+<!--------JavaScript for Toggle Menu------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right =" -200px";
+    }
+  </script>
+      <!-----call to action------>
+<section class="cta">
+  <h1>JOIN OUR SHORT COURSE PROGRAM</h1>
+  <p>
+    To be able to full advantage of the opportunities available to this driven era, it is important to acquire new skills.Skills in ICT that will springboard your career
+  </p>
+  <div class="row">
+    <div class="auction-col">
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      <h3>Experts Instructors</h3>
+      <p1>
+       Our instructors have years of industry experience which presents students with a unique opportunity of learning from the best.
+      </p1>
+    </div>
+    <div class="auction-col">
+      <i class="fa fa-certificate" aria-hidden="true"></i>
+      <h3>Certificate</h3>
+      <p1>
+        You earn a certificateof completion from the department after completing and passing the prescribed exam.
+      </p1>
+    </div>
+  </div>
+  <a href="" class="hero-btn">CONTACT US</a>
+</section>
+<!------footer------>
+<section class="main">
+  <div class="footer">
+    <div>
+      <div class="footer-col">
+       <h4>Academics</h4>
+       <ul>
+        <li><a href="">Undergraduate Courses</a></li>
+        <li><a href="">Graduate Courses(MPhil Computer Science)</a></li>
+        <li><a href="">Graduate Courses(PhD)</a></li>
+        <li><a href="">Academic Calender</a></li>
+        <li><a href="">Level 200 & 300 Timetable</a></li>
+        <li><a href="">Placement For Level 200 Students</a></li>
+        <li><a href="">Student Complaint Form</a></li>
+       </ul> 
+       <h5>Newsletter</h5>
+       <input class="srch" type="search" name="" placeholder="Enter Email Address">
+       <a href="#"><button class="btn">search</button></a>
+      </div>
+    </div>
+    <div >
+      <div class="footer-col">
+       <h4>Admission</h4>
+       <ul>
+        <li><a href="">Undergraduate</a></li>
+        <li><a href="">Graduate</a></li>
+        <li><a href="">International Students</a></li>
+        <li><a href="">Entry requirement</a></li>
+        <li><a href="">Contact Us</a></li>
+       </ul>
+       <h6>Contact Us</h6>
+       <h7 class="contact">Phone & Email</h7>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> 05090491834</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> 0544828922</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>
+          akamal003@st.ug.edu.gh</p>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col">
+        <h4>Research</h4>
+        <ul>
+          <li><a href="">Research at DCS</a></li>
+          <li><a href="">Research Impact</a></li>
+          <li><a href="">Libraries</a></li>
+        </ul>
+        <p class="loc"> <strong> Location:</strong> <br>University of Ghana, Legon Campus <br> Opposite Mathematics Department </p>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col">
+        <h4>About The Department</h4>
+        <ul>
+          <li><a href="">Introducing DCS</a></li>
+          <li><a href="">Head of department office</a></li>
+          <li><a href="">Faculty</a></li>
+          <li><a href="">Events</a></li>
+         </ul> 
+      </div>
+    </div>
+  </div>
+  <div class="icons"> 
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <i class="fa fa-snapchat" aria-hidden="true"></i>
+  </div>
+  <p>
+    Copyright@2023 All rights reserved
+  </p>
+</section>
+  
