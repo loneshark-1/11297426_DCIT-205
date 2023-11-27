@@ -1,86 +1,70 @@
-# DCIT_205_IA
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title> DEPARTMENT OF COMPTER SCIENCE  </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-    <body>
-    <section class="header">
-      <nav>
-        <a href="index.html"><img src="images/comScience_logo.png"></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">STUDY WITH US</a></li>
-            <li><a href="">COURSE FINDER</a></li>
-            <li><a href="">SCHOOLS</a></li>
-            <li><a href="">RESEARCH</a></li>
-            <li><a href="">ALUMNI AND FRIENDS</a></li>
-            <li><a href="">NEWS</a></li>
-            <li><a href="">EVENTS</a></li>
-            <li><a href="">ABOUT</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
+# Computer Science Department Website
 
-      <div class="text-box">
-        <h1> GATEWAY TO WORLD CLASS COMPUTER SCIENCE EDUCATION</h1>
-        <p>dont know what<br> to type yet </p>
-        <a href=""class="hero-btn">still blank  </a>
-      </div>
-    </section>
-<!-----course---->
-<section class="course">
-  <h1> Short Courses we offer</h1>
-  <p>Our eight week intensive certificate course is open to senior high school graduates,<br>tertiary students, school graduates, workers and the general public.
-  </p>
+## Introduction
 
-  <div class="row">
-      <div class=" course-col">
-        <h3>Introduction To Web Programming</h3>
-        <p>Understand the  fundamentals of technologies and create web-based applications with latest technologies.</p>
-      </div>
-        <div class=" course-col">
-          <h3>Computer Network fundamentals[CCNA].</h3>
-          <p> We provide quality training for students to become a Cisco Certified Network Associate.</p>
-        </div>
-         <div class=" course-col">
-        <h3>Mobile Application Development</h3>
-        <p>We provide world class technologies for Mobile Application Development using the mobile-first worklight by IBM.</p>
-         </div>
-         <div class=" course-col">
-          <h3>Introduction To Security and Ethical Hacking </h3>
-          <p>Learn the various technigues used to secure a computer system from attacks through hacking.</p>
-        </div>   
-  </div>
-</section>
+Welcome to the Computer Science Department Website! This website serves as a comprehensive resource for students, faculty, and visitors who are interested in the activities, programs, and resources offered by the Computer Science Department of our school. Whether you are a prospective student, a current student, or an industry professional, this website provides valuable information about our department, courses, research, and events.
 
-<!--------- courses2 -------->
-<section class="campus">
-  <h1> Short Courses we Offer </h1>
-  <p>Our eight week intensive certificate course is open to senior high school graduates,<br>tertiary students, school graduates, workers and the general public.
-  </p>
+## Purpose
 
+The purpose of this website is to provide a centralized platform to showcase the Computer Science Department's offerings and facilitate communication and engagement within the department's community. Key objectives of the website include:
 
-</section>
+1. Providing an overview of the Computer Science Department's mission, vision, and values.
+2. Presenting information about the faculty members, their research interests, and publications.
+3. Offering details about undergraduate and graduate programs, including course descriptions and degree requirements.
+4. Highlighting ongoing research projects, collaborations, and achievements within the department.
+5. Sharing announcements, news, and upcoming events, such as seminars, workshops, and conferences.
+6. Facilitating contact between students, faculty, and prospective employers through job postings and internship opportunities.
 
-<!--------JavaScript for Toggle Menu------->
-      <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu(){
-        navLinks.style.right = "0";
-      }
-      function hideMenu(){
-        navLinks.style.right =" -200px";
-      }
-    </script>
-  </body>
-</html>
+## Cloning and Setup Instructions
+
+To clone and set up the project locally on your machine, please follow these steps:
+
+1. Ensure that you have Git installed on your computer. If not, you can download and install it from [https://git-scm.com/](https://git-scm.com/).
+
+2. Open a terminal or command prompt.
+
+3. Change to the directory where you want to clone the project.
+
+4. Execute the following command to clone the repository:
+
+   `
+   git clone https://github.com/loneshark-1/computer-science-website.git
+   
+
+5. Change to the project directory:
+
+   `
+   cd computer-science-website
+   
+
+6. Install the necessary dependencies by running the following command:
+
+   `
+   npm install
+   
+
+7. Once the dependencies are installed, start the local development server:
+
+   `
+   npm start
+   
+
+## Lessons Learned
+
+Throughout the development of this project, several valuable lessons were learned. Here are some key takeaways:
+
+1. *Web Development Best Practices*: The project provided an opportunity to apply web development best practices, including modular code organization, responsive design, accessibility considerations, and performance optimizations.
+
+2. *Frontend Frameworks*: Working on this project involved utilizing frontend frameworks such as React.js, which helped streamline the development process and improve code maintainability.
+
+3. *User-Centric Design*: The user experience and user interface design aspects of the project highlighted the significance of creating intuitive, user-friendly interfaces that cater to the needs and preferences of the target audience.
+
+4. *Documentation*: Writing clear and comprehensive documentation throughout the development process proved invaluable in ensuring smooth onboarding, maintenance, and future enhancements of the website.
+
+## Conclusion
+
+The Computer Science Department Website aims to serve as an informative and engaging platform for the Computer Science Department's community. By providing detailed information about the department's offerings, research activities, and events, we hope to foster collaboration, facilitate communication, and showcase the achievements of our faculty and students.
+
+We welcome contributions and suggestions to improve the website. If you encounter any issues, have ideas for enhancements, or would like to contribute, please submit an issue or pull request on the project's GitHub repository.
+
+Thank you for visiting the Computer Science Department Website!
