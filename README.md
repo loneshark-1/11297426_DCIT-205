@@ -71,6 +71,8 @@ Thank you for visiting the Computer Science Department Website!
 ![Web capture_28-11-2023_17531_](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/10ce8826-d173-402b-9a2d-790a2787e284)
 ![Web capture_28-11-2023_165853_ (1)](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/403abb3d-ed5b-4d2f-b881-7471b384b45f)
 ![image](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/ff10b561-f8d5-4a0f-9070-40e381782933)
+![Web capture_28-11-2023_17146_](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/cb333c3a-a9c3-4170-8182-83ba6ae8b630)
+![Web capture_28-11-2023_17414_](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/f5bf4c51-4513-433d-a3ae-764f6f86481e)
 
 
 
