@@ -1,0 +1,388 @@
+<style>
+  .wh-sub-heading{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 400px;
+ 
+}
+.about-coll h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+    color: #1b0d30;
+}
+.about-coll p{
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 10px;
+    text-align: center;
+}
+.about-u{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.about-coll{
+    flex-basis: 40%;
+    padding: 10px 2px;
+}
+.about-coll img{
+    width: 100%;
+
+}
+.about-coll h1{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UG CS Dept - Official Website</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/fone.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/ftwo.png"
+      media="min-width(768px)"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">UG Computer Science Dept</a>
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">UG Computer Science Dept</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="Close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-toggler>About Us</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#classes" class="navbar-link" data-nav-toggler
+                >Courses</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#tuition" class="navbar-link" data-nav-toggler
+                >Department</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            aria-label="Open search"
+            data-search-toggler
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a
+            href="tel:+233501382035"
+            class="header-action-btn login-btn"
+            target="_blank"
+          >
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">CONTACT US</span>
+          </a>
+
+          <button
+            class="header-action-btn nav-open-btn"
+            aria-label="Open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- 
+    - #SEARCH BOX
+  -->
+
+    <div class="search-container" data-search-box>
+      <div class="container">
+        <button
+          class="search-close-btn"
+          aria-label="Close search"
+          data-search-toggler
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="search-wrapper">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Here..."
+            aria-label="Search"
+            class="search-field"
+          />
+
+          <button class="search-submit" aria-label="Submit" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="hero"
+          id="home"
+          aria-label="hero"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+      
+          <div>
+            <h1>Facilities</h1>
+          </section>
+          <!----->
+          <section class="wh sub-heading">
+              <h2> Welcome To Our Facilities</h2> 
+              <p>The computer science facilities  in the school contribute significantly to the holistic development of students, providing them with the tools and environments they need to excel academically, socially, and physically.</p>
+          <p>These are some facilities in the computer science department we can talk about;</p>
+          <section class="about-us">
+              <div class="row">
+                  <div class="about-coll">
+                      <img src="assets/images/OIP.jpeg">
+                  </div>
+                  <div class="about-coll">
+                      <h1>Computer Science Laboratory</h1>
+                      <p>This laboratory  provides students with access to computers and the internet, fostering digital literacy and competency.</p>
+                      <p>It also helps students learn essential skills such as typing, basic computer operations, and software usage, which are increasingly important in the modern world.</p>
+                      <p>Teaching assistant are mostly found in computer labs which are ideal spaces for teaching programming and coding skills.</p>
+                  </div>
+              </div>
+
+          </section>
+          <section class="about-u">
+              <div class="row">
+                  <div class="about-coll">
+                      <h1>The Library</h1>
+                      <p>The Computer science  library often contains materials specifically tailored to the subjects and courses offered by the department</p>
+                      <p>Specialized journals, reference books, and research publications can enhance the depth of knowledge available to students and researchers.</p>
+                      <p>The Computer science library serves as a hub for collaboration and intellectual exchange within the department.</p>
+                  </div>
+                  <div class="about-coll">
+                      <img src="assets/images/R.jpeg"> 
+                      </div>
+              </div>
+
+          </section>
+          <section class="about-us">
+              <div class="row">
+                  <div class="about-coll">
+                      <img src="assets/images/th.jpeg"> 
+                      </div>
+                  <div class="about-coll">
+                     <h1>Sports Field</h1>
+                     <p>All departmental sports activities are held at the sports field</p>
+                     <p>These sports activities are associated with improved health, increased energy levels, and better stress management.</p>
+                     <p>Team sports promote collaboration, communication, and a sense of camaraderie among participants, fostering a positive and supportive departmental culture.</p>
+                     <p>These sports activities provide a relaxed and informal setting for faculty and students to interact outside of the academic environment.</p>
+                      </div>
+              </div>
+          </section>
+
+
+          </div>
+        </section>
+
+        <!--
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">Academics</a>
+
+            <p class="section-text">
+              Undergraduate Courses <br><br>Graduate Courses (MPhil Computer Science)<br><br>
+              Graduate Courses(MSc Computer Science)<br><br>
+              Graduate Courses(PhD)<br><br>
+              Academic Calendar<br><br>
+              Level 200 & 300 Timetable<br><br>
+              Placements For Level 200 Students<br><br>
+              Student Complaint Form
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About The Department</p>
+            </li>
+            <p class="section-text">
+              Introducing DCS<br><br>
+              Head of Department's office<br><br>
+              Faculty<br><br>
+              Events<br><br>
+            </p>
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Admissions</p>
+            </li>
+            <p class="section-text">
+              Undergraduate<br><br>
+              Graduate<br><br>
+              International Students<br><br>
+              Entry Requirements<br><br>
+              Contact Us<br><br>
+            </p>
+
+            
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="footer-link">
+                University Of Ghana, Legon Campus
+                Opposite Mathematics Department
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+233501382035" class="footer-link"
+                >+233 501 382 035</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="dcs@ug.edu.gh" class="footer-link"
+                >dcs@ug.edu.gh</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

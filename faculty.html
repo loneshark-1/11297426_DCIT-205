@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UG CS Dept - Official Website</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/fone.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/ftwo.png"
+      media="min-width(768px)"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">UG Computer Science Dept</a>
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">UG Computer Science Dept</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="Close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-toggler>About Us</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#classes" class="navbar-link" data-nav-toggler
+                >Courses</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#tuition" class="navbar-link" data-nav-toggler
+                >Department</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            aria-label="Open search"
+            data-search-toggler
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a
+            href="tel:+233501382035"
+            class="header-action-btn login-btn"
+            target="_blank"
+          >
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">CONTACT US</span>
+          </a>
+
+          <button
+            class="header-action-btn nav-open-btn"
+            aria-label="Open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- 
+    - #SEARCH BOX
+  -->
+
+    <div class="search-container" data-search-box>
+      <div class="container">
+        <button
+          class="search-close-btn"
+          aria-label="Close search"
+          data-search-toggler
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="search-wrapper">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Here..."
+            aria-label="Search"
+            class="search-field"
+          />
+
+          <button class="search-submit" aria-label="Submit" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="hero"
+          id="home"
+          aria-label="hero"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+          <div class="new">
+            <h1>Faculty</h1>
+            <div>     
+              <p>1. Dr. Sarah Johnson: She specializes in machine learning and has published several research papers on the topic. She's known for her
+              innovative teaching methods and always encourages her students to think outside the box. <br><br>
+
+             2. Professor Mark Roberts: He has extensive experience in software engineering and has worked on various industry projects. 
+             Students love his practical approach to teaching and his ability to explain complex concepts in a simple way.
+             </p>
+     </div>
+
+     <div class="box23">
+         <p>3. Dr. Emily Thompson: She is an expert in cybersecurity and is passionate about keeping data safe in the digital age. She often organizes workshops and seminars to raise awareness about online security threats. <br><br>
+
+             The Department of Computer Science faculty is a group of dedicated and knowledgeable individuals who are passionate about the world of computers. They bring a wealth of expertise and experience to the table, 
+             ensuring that students receive a top-notch education in the field of computer science</p>
+     </div>
+
+     <div class="box24">
+         <p>One standout faculty member is Dr. Sarah Johnson. With her specialization in machine learning, she has made significant contributions to the field through her research and publications.
+              Dr. Johnson is known for her innovative teaching methods, always challenging her students to think creatively and critically. <br><br>
+
+             Another notable faculty member is Professor Mark Roberts. His extensive experience in software engineering has equipped him with valuable insights and practical skills. He is highly regarded by students for his ability to simplify complex concepts and make them accessible to all.
+             </p>
+
+            </div>
+            <div>
+              
+            </div>
+
+      
+
+          </div>
+        </section>
+
+        
+   <!-----
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">Academics</a>
+
+            <p class="section-text">
+              Undergraduate Courses <br><br>Graduate Courses (MPhil Computer Science)<br><br>
+              Graduate Courses(MSc Computer Science)<br><br>
+              Graduate Courses(PhD)<br><br>
+              Academic Calendar<br><br>
+              Level 200 & 300 Timetable<br><br>
+              Placements For Level 200 Students<br><br>
+              Student Complaint Form
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About The Department</p>
+            </li>
+            <p class="section-text">
+              Introducing DCS<br><br>
+              Head of Department's office<br><br>
+              Faculty<br><br>
+              Events<br><br>
+            </p>
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Admissions</p>
+            </li>
+            <p class="section-text">
+              Undergraduate<br><br>
+              Graduate<br><br>
+              International Students<br><br>
+              Entry Requirements<br><br>
+              Contact Us<br><br>
+            </p>
+
+            
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="footer-link">
+                University Of Ghana, Legon Campus
+                Opposite Mathematics Department
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+233501382035" class="footer-link"
+                >+233 501 382 035</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="dcs@ug.edu.gh" class="footer-link"
+                >dcs@ug.edu.gh</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
