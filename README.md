@@ -68,3 +68,9 @@ The Computer Science Department Website aims to serve as an informative and enga
 We welcome contributions and suggestions to improve the website. If you encounter any issues, have ideas for enhancements, or would like to contribute, please submit an issue or pull request on the project's GitHub repository.
 
 Thank you for visiting the Computer Science Department Website!
+![Web capture_28-11-2023_17531_](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/10ce8826-d173-402b-9a2d-790a2787e284)
+![Web capture_28-11-2023_165853_ (1)](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/403abb3d-ed5b-4d2f-b881-7471b384b45f)
+![image](https://github.com/loneshark-1/11297426_DCIT-205/assets/151842354/ff10b561-f8d5-4a0f-9070-40e381782933)
+
+
+
