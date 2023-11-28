@@ -1,0 +1,470 @@
+<style>
+  /* blog page */
+.blog-content{
+    width: 80%;
+    margin:auto;
+    padding:60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width:100%;
+}
+.blog-left h2{
+    color:#222;
+    font-weight:600;
+    margin:30px;
+}
+.blog-right{
+    flex-basis: 32%;
+}
+.blog-right h3{
+    background: blue;
+    color:#fff;
+    padding:7px;
+    font-size:16px;
+    margin-bottom:20px;
+}
+.blog-right div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#555;
+    padding:8px;
+    box-sizing: border-box;
+}
+
+
+.comment-box{
+    border:1px solid blue;
+     margin:50px 0;
+     padding:10px 20px;
+     
+}
+.comment-box h3{
+    text-align:left;
+    color: blue;
+}
+.comment-form input, .comment-form textarea{
+     width:100%;
+     padding:10px;
+     margin:15px 0;
+     box-sizing: border-box;
+     border:none;
+     outline:none;
+     background:#a59393;
+}
+.comment-form button{
+    margin:15px;
+    color: #fff;
+    background-color: black;
+    border-radius: 20px;
+}
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UG CS Dept - Official Website</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/fone.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/ftwo.png"
+      media="min-width(768px)"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">UG Computer Science Dept</a>
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">UG Computer Science Dept</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="Close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-toggler>About Us</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#classes" class="navbar-link" data-nav-toggler
+                >Courses</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#tuition" class="navbar-link" data-nav-toggler
+                >Department</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            aria-label="Open search"
+            data-search-toggler
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a
+            href="tel:+233501382035"
+            class="header-action-btn login-btn"
+            target="_blank"
+          >
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">CONTACT US</span>
+          </a>
+
+          <button
+            class="header-action-btn nav-open-btn"
+            aria-label="Open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!-- 
+    - #SEARCH BOX
+  -->
+
+    <div class="search-container" data-search-box>
+      <div class="container">
+        <button
+          class="search-close-btn"
+          aria-label="Close search"
+          data-search-toggler
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="search-wrapper">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Here..."
+            aria-label="Search"
+            class="search-field"
+          />
+
+          <button class="search-submit" aria-label="Submit" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+ <section
+          class="hero"
+          id="home"
+          aria-label="hero"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+        <h1>Blog</h1>
+<main>
+          <!-- Content of the home page -->
+      <div>
+          <p class="content">"Welcome to the University of Ghana, where academic
+               excellence meets a vibrant and inclusive community.
+                Our commitment to fostering knowledge, diversity, 
+                and innovation shapes every aspect of campus life.
+                 Explore the possibilities, embark on a transformative
+                  educational journey, and be part of a dynamic community
+                   that believes in the power of learning and discovery.".</p>
+  
+  
+                   <article class="article">
+                      <h2>Artificial Intelligence (AI)</h2><br>
+                      <p>Published on: <time datetime="2023-11-19">November 19, 2023</time></p><br><br>
+                      <p>Artificial Intelligence (AI) has been a buzzword
+                           in the field of computer science for several
+                            years, and its impact is continuously growing.
+                             In this post, we'll explore the future of 
+                             AI and its potential implications for various
+                              industries.</p><br><br>
+      
+          <p>Recent advancements in machine learning, deep learning, 
+              and natural language processing have propelled AI into 
+              new frontiers. Researchers and developers are pushing
+               the boundaries of what AI can achieve, from self-driving 
+               cars to advanced language translation systems.</p><br><br>
+      
+          <p>One of the exciting prospects is the integration of AI
+               into everyday technologies. Imagine a world where your 
+               smartphone understands your preferences, anticipates 
+               your needs, and adapts to your behavior. This level of 
+               personalization is a key area of focus for AI researchers.
+              </p><br><br>
+      
+          <br><br>
+                  </article>
+                  <hr>
+      
+                  <article class="article1">
+                    
+                      <h2>The Rise of Quantum Computing: A Glimpse into the Future</h2><br>
+                      <p>Published on: <time datetime="2023-11-21">November 21, 2023</time></p><br><br>
+      
+                      <p>Quantum computing, once a theoretical concept,
+                           is now becoming a reality, promising revolutionary
+                            changes in the world of computer science. In this 
+                            post, we'll explore the fundamentals of quantum 
+                            computing and its potential impact on various 
+                            industries.</p><br><br>
+      
+          <p>Unlike classical computers that use bits, quantum computers leverage 
+              qubits, taking advantage of the principles of superposition and entanglement.
+               This allows quantum computers to perform complex calculations 
+               at speeds
+                that were previously unimaginable.</p><br><br>
+      
+          <p>Industries such as cryptography, optimization, 
+              and drug discovery are expected to be transformed 
+              by the power of quantum computing. Breaking traditional
+               encryption methods, solving complex optimization 
+               problems, and simulating molecular structures for 
+               drug development are just a few examples of the 
+               potential applications.</p><br><br>
+      
+          
+                  </article>
+      
+  
+                <!--blog-->
+  <section class="blog-content">
+  
+      <div class="row">
+          <div class="blog-left">
+             
+            <div class="comment-box">
+              <h3>Leave a comment</h3>
+              <form class="comment-form">
+                
+                 <textarea rows="5" placeholder="Comment here" id="textarea1"> </textarea>
+                 <button class="hero-btn red-btn" onclick="postMessage()">POST COMMENT</button>
+  
+                 <p id="post1"></p>
+              </form>
+            </div>
+          </div>
+  
+          
+          <div class="blog-right">
+              <h3>Post Category(s)</h3>
+              <div>
+                  <span>About Artificial Inteligience </span>
+                  <span>2</span>
+              </div>
+              <div>
+                  <span>Data Structure</span>
+                  <span>12</span>
+              </div>
+              <div>
+                  <span>Programming Languages</span>
+                  <span>451</span>
+              </div>
+          </div>
+      </div>
+      </div>
+  
+  </section>
+  
+  
+  
+</main>
+</section>
+  
+    
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">Academics</a>
+
+            <p class="section-text">
+              Undergraduate Courses <br><br>Graduate Courses (MPhil Computer Science)<br><br>
+              Graduate Courses(MSc Computer Science)<br><br>
+              Graduate Courses(PhD)<br><br>
+              Academic Calendar<br><br>
+              Level 200 & 300 Timetable<br><br>
+              Placements For Level 200 Students<br><br>
+              Student Complaint Form
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">About The Department</p>
+            </li>
+            <p class="section-text">
+              Introducing DCS<br><br>
+              Head of Department's office<br><br>
+              Faculty<br><br>
+              Events<br><br>
+            </p>
+
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Admissions</p>
+            </li>
+            <p class="section-text">
+              Undergraduate<br><br>
+              Graduate<br><br>
+              International Students<br><br>
+              Entry Requirements<br><br>
+              Contact Us<br><br>
+            </p>
+
+            
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="footer-link">
+                University Of Ghana, Legon Campus
+                Opposite Mathematics Department
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+233501382035" class="footer-link"
+                >+233 501 382 035</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="dcs@ug.edu.gh" class="footer-link"
+                >dcs@ug.edu.gh</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            Copyright 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
